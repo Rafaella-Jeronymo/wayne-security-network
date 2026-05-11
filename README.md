@@ -1,5 +1,5 @@
 # Wayne Security Network
-Projeto fictício inspirado em sistemas corporativos de segurança e monitoramento.
+Sistema fictício de monitoramento corporativo inspirado no universo tecnológico da DC, especificamente a Wayne Enterprises.
 
 ## Sobre o projeto
 Este projeto foi desenvolvido com foco em prática de HTML, CSS, JavaScript e estruturação de interfaces.
