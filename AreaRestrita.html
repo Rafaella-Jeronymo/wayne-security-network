@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Wayne Security Network</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+    <body class="secure-body">
+        <section class="registration-container">
+            <div class="register-box">
+                <h1>Employee Access</h1>
+                <p>Enter your credentials to access the internal system</p>
+                <div class="warning">
+                    Unauthorized access is prohibited. All activities are monitored and logged.
+                </div>
+                <form id="accessForm">
+                    <input type="text" placeholder="Employee ID">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Request Access</button>
+                </form>
+            </div>
+        </section>
+        <script>
+            document.getElementById("accessForm").addEventListener("submit", function(event){
+
+                event.preventDefault();
+
+                const overlay = document.createElement("div");
+                overlay.classList.add("access-overlay");
+
+                const box = document.createElement("div");
+                box.classList.add("access-box");
+
+                box.innerText = "ACCESS GRANTED";
+
+                overlay.appendChild(box);
+                document.body.appendChild(overlay);
+
+                setTimeout(() => {
+                    window.location.href = "DashboardEmployee.html";
+                }, 1500);
+
+            });
+        </script>
+    </body>
+</html>

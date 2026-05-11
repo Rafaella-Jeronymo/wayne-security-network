@@ -1,0 +1,286 @@
+:root{
+    --bg-color: #0b0f19;
+    --navbar-color: #111827;
+    --gold: #c9a227;
+    --text-color: #f1f5f9;
+    --hover-color: #e0b94f;
+}
+
+/* corpo do site */
+body{
+    background-color: var(--bg-color);
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-color);
+}
+
+/* navbar */
+.navbar{
+    background-color: var(--navbar-color) !important;
+    border-bottom: 1px solid #222;
+    padding: 15px 30px;
+}
+
+/* logo Wayne Enterprises */
+.navbar-brand{
+    color: var(--gold) !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+/* efeito hover no logo */
+.navbar-brand:hover{
+    color: var(--hover-color) !important;
+}
+
+/* links */
+.nav-link{
+    color: var(--text-color) !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+/* hover dos links */
+.nav-link:hover{
+    color: var(--gold) !important;
+}
+
+/* dropdown */
+.dropdown-menu{
+    background-color: #161b22;
+    border: 1px solid #333;
+}
+
+/* itens do dropdown */
+.dropdown-item{
+    color: white;
+}
+
+/* hover dropdown */
+.dropdown-item:hover{
+    background-color: var(--gold);
+    color: black;
+}
+/* área restrita */
+.classified{
+    opacity: 0.15;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+}
+
+/* quando passa o mouse */
+.classified:hover{
+    opacity: 1;
+    color: #c9a227 !important;
+    text-shadow: 0 0 10px rgba(201,162,39,.8);
+}
+/* área do sistema corporativo */
+
+.register-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* caixa */
+
+.register-box{
+    width: 420px;
+    background: rgba(22, 27, 34, 0.95);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0,0,0,.7);
+}
+
+/* título */
+
+.register-box h1{
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+
+/* subtítulo */
+
+.register-box p{
+    text-align: center;
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+/* aviso */
+
+.warning{
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* inputs */
+
+.register-box input{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* focus */
+
+.register-box input:focus{
+    border-color: var(--gold);
+    box-shadow: 0 0 10px rgba(201,162,39,.3);
+}
+
+/* botão */
+
+.register-box button{
+    width: 100%;
+    padding: 14px;
+    background-color: var(--gold);
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* hover */
+
+.register-box button:hover{
+    background-color: #e0b94f;
+    box-shadow: 0 0 15px rgba(201,162,39,.5);
+}
+
+.secure-body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0b0f19 0%, #161b22 100%);
+}
+/* fundo do dashboard */
+.dashboard-body{
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #1a2333, #0b0f19);
+    color: #f1f5f9;
+}
+
+/* header */
+.dashboard-header{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.dashboard-header h1{
+    color: #c9a227;
+    letter-spacing: 3px;
+}
+
+.dashboard-header p{
+    color: #8b949e;
+}
+
+/* grid */
+.dashboard-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* cards */
+.card{
+    background: rgba(22, 27, 34, 0.95);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    border-color: #c9a227;
+    box-shadow: 0 0 20px rgba(201,162,39,.2);
+}
+
+/* alerta especial */
+.alert{
+    border-color: #ff4d4d;
+}
+
+.alert h2{
+    color: #ff4d4d;
+}
+.access-overlay{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.access-box{
+
+    background: rgba(22, 27, 34, 0.95);
+
+    border: 1px solid #00ff88;
+
+    padding: 30px 60px;
+
+    border-radius: 12px;
+
+    color: #00ff88;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 2rem;
+
+    letter-spacing: 3px;
+
+    text-align: center;
+
+    text-shadow: 0 0 10px #00ff88;
+
+    box-shadow: 0 0 25px rgba(0,255,136,0.3);
+
+    animation: pop 0.3s ease-out;
+}
+
+@keyframes pop{
+
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
